@@ -1,0 +1,23 @@
+3. **edgeone/edgeone.config.json**（EdgeOne配置文件）
+```json
+{
+  "name": "google-proxy",
+  "build": {
+    "command": "npm run build",
+    "outputDirectory": "dist"
+  },
+  "routes": [
+    {
+      "path": "/*",
+      "destination": "/_worker.js"
+    }
+  ],
+  "environment": {
+    "MAIN_DOMAIN": "example.com",
+    "TARGET_ROOT": "google.com",
+    "REDIRECT_URL": "https://gov.cn"
+  },
+  "customDomains": [
+    "*.yourdomain.com"
+  ]
+}

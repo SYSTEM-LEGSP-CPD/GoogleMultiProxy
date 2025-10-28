@@ -1,0 +1,14 @@
+### 6. 文档版本控制
+
+**docs/_version.json**
+```json
+{
+  "version": "1.0.0",
+  "build_timestamp": "2025-10-29T02:05:44Z",
+  "commit_hash": "auto-generated",
+  "platforms": [
+    "Cloudflare Workers",
+    "Vercel",
+    "EdgeOne Pages"
+  ]
+}
